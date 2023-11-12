@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/tyokin.css">
+    <script src="js/tyokin.js"></script>
+    <script>
+        //
+        // TODO: Write JavaScript code here
+        //
+    </script>
+</head>
+<body onload="DefaultSave()">
+    <header>
+        <h1>貯金計画</h1>
+    </header>
+    <br>
+    <br>
+    <main>
+        <div class="ffm">
+            <input id="kin" type="text" autocomlete="off" placeholder="目標金額を入力してください"/>
+        </div>
+        <form id="target">
+            <input type="radio" name="zutu" value="1" id="maiday">
+            <label for="maiday" class="label">毎日</label>
+            <input type="radio" name="zutu" value="2" id="maiweek">
+            <label for="maiweek" class="label">毎週</label>
+            <input type="radio" name="zutu" value="3" id="maimon">
+            <label for="maimon" class="label">毎月</label>
+        </form>
+        <br>
+        <br>
+        <div class="ffm">
+            <input id="nnkin" type="text" placeholder="投入金額を入力してください"/>
+        </div>
+            <a href="#" class="btn1" onClick="disp()">入力</a>
+            <br>
+            <div id="msg" style="text-align:center">
+                目標金額まであと…
+            </div>
+        </div>
+    <br>
+    <br>
+    <a href="#" class="btn2" onClick="HTMLRestore()">やり直す</a>
+    </main>
+</body>
+</html>
